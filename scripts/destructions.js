@@ -12,6 +12,8 @@ const options = {
         console.log('test');
     }
 }; 
+const {you} = options;
+console.log(you);
 
 const {border, bg} = options.colors;
 console.log(border, bg);
