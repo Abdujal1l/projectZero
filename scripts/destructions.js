@@ -44,3 +44,36 @@ console.log(counter);
 
 console.log(Object.keys(options));
 console.log(Object.keys(options).length);
+
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    },
+    showAgeAndLangs: function(show){
+        let  me = '';
+        let age = show.age;
+        
+        for(let key in show){
+            if (typeof(show[key]) === 'function'){
+                let lang = show[key];
+                
+        }else {
+            return false;
+        }
+        me = `Мне ${age} и я владею языками: ${lang} `;
+        return me; 
+    }
+}};
+const answer = personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+console.log(answer);
+
+
+
+    

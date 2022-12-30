@@ -1,36 +1,36 @@
 'use strict';
 
-// let a = 5,
-//     b = a;
-// b = b + 5;
+let a = 5,
+    b = a;
+b = b + 5;
 
-// console.log(a);
-// console.log(b);
+console.log(a);
+console.log(b);
 
-// const obj = {
-//     a: 5 ,
-//     b: 1
-// };
+const obj = {
+    a: 5 ,
+    b: 1
+};
 
-// const obj2 = obj ; //link to obj 
-
-
-// obj2.a = 10; // obj.a 10 and obj2.a 10 
+const obj2 = obj ; //link to obj 
 
 
-// console.log(obj);
-// console.log(obj2);
+obj2.a = 10; // obj.a 10 and obj2.a 10 
 
-// function copy(mainObj){
-//     let objCopy = {};
 
-//     let key;
-//     for (key in mainObj){
-//         objCopy[key] = mainObj[key];
-//     }
+console.log(obj);
+console.log(obj2);
 
-//     return objCopy;
-// }
+function copy(mainObj){
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj){
+        objCopy[key] = mainObj[key];
+    }
+
+    return objCopy;
+}
 
 const numbers = {
     a:2 ,
@@ -42,12 +42,12 @@ const numbers = {
 };
 
 
-// const newNumbers = copy(numbers);//new numbers is a copy of numbers Not a link to obj but another obj 
+const newNumbers = copy(numbers);//new numbers is a copy of numbers Not a link to obj but another obj 
 
-// newNumbers.a = 10;
+newNumbers.a = 10;
 
-// console.log(newNumbers);
-// console.log(numbers);
+console.log(newNumbers);
+console.log(numbers);
 
 
 const add = {
@@ -55,18 +55,18 @@ const add = {
     e: 20
 };
 
-// console.log(Object.assign(numbers, add)); //
-// console.log(numbers);
-// console.log(add);
+console.log(Object.assign(numbers, add)); //
+console.log(numbers);
+console.log(add);
 
-// const clone = Object.assign({}, add);
+const clone = Object.assign({}, add);
 
 
-// clone.d = 20 ;
-// clone.l = 13;
+clone.d = 20 ;
+clone.l = 13;
 
-// console.log(clone);
-// console.log(add);
+console.log(clone);
+console.log(add);
 
 const oldArray = ['2', 'b', 'c'];
 const newArray = oldArray.slice();
